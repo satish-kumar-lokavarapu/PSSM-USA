@@ -14,6 +14,8 @@ import Spiritual from "../components/spiritual";
 import SocialMedia from "../components/SocialMedia";
 import Inperson from "../components/Inperson";
 import WhyMeditation from "../components/WhyMeditation";
+import WhyPyramids from "../components/WhyPyramids";
+import HowToMeditate from "../components/HowToMeditate";
 
 function Home() {
   return (
@@ -23,8 +25,10 @@ function Home() {
         <div className="left-container">
           <Program />
           <WhyMeditation />
+          <HowToMeditate />
           {/* <Inperson /> */}
           <Events />
+          <WhyPyramids />
           <Donation />
           <Volunteer />
         </div>

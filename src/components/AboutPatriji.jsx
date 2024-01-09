@@ -17,14 +17,14 @@ function AboutPatriji() {
           </span>
         </div>
       </div>
-      <hr className="hr-about" />
-      <div className="circle-btn-container">
+      {/* <hr className="hr-about" /> */}
+      {/* <div className="circle-btn-container">
         <CircleCard />
         <CircleCard />
         <CircleCard />
         <CircleCard />
         <CircleCard />
-      </div>
+      </div> */}
     </div>
   );
 }

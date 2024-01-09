@@ -32,7 +32,7 @@ function ProgramCard(props) {
           </p>
           <p>
             Youtube Live link:{" "}
-            <a href={props.youtube_link}>{props.youtube_link}</a>
+            <a href={props.youtube_link}>Click here for You Tube Link</a>
           </p>
         </div>
       </div>
