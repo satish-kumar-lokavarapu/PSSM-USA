@@ -2,14 +2,14 @@ import React from "react";
 import flyer1 from "../images/flyer1.jpeg";
 import "../styles.css";
 
-function ProgramCard() {
+function ProgramCard(props) {
   return (
     <div className="programcard">
       <div className="programcard-head">
         {/* <div className="circle-img"></div> */}
         <div className="progcard-title">
-          <p>CHANGE YOUR MIND and CHANGE YOUR LIFE </p>
-          <p>Dates: Dec 12th to Jan 12th </p>
+          <p>{props.title} </p>
+          <p>{props.date} </p>
         </div>
       </div>
       <div className="programcard-type">
@@ -17,41 +17,25 @@ function ProgramCard() {
       </div>
       <div className="programcard-body">
         <div>
-          <img className="flyer" src={flyer1} alt="flyer-1" />
+          <img className="flyer" src={props.img} alt="flyer-1" />
         </div>
         <div>
-          <p>Date & Time: 5.30 am EST</p>
+          <p>Date & Time:{props.time}</p>
           <p>
             EST_ZOOM Meeting Link:{" "}
-            <a href="https://us02web.zoom.us/j/83299568390?pwd=SUJOZWsyUGE3ei9naEUvMTJUdHEwdz09">
-              https://us02web.zoom.us/j/83299568390?pwd=SUJOZWsyUGE3ei9naEUvMTJUdHEwdz09
-            </a>
+            <a href={props.zoom_link}>click to join the zoom</a>
           </p>
           <p>
-            Zoom Meeting Id: 832 9956 8390
+            Zoom Meeting Id: {props.zoom_meeting_id}
             <br />
-            Zoom Passcode: 801942
+            Zoom Passcode: {props.zoom_passcode}
           </p>
           <p>
             Youtube Live link:{" "}
-            <a href="https://youtube.com/live/f1P5AepH3no?feature=share">
-              https://youtube.com/live/f1P5AepH3no?feature=share
-            </a>
+            <a href={props.youtube_link}>{props.youtube_link}</a>
           </p>
         </div>
       </div>
-      {/* <hr className="hl" />
-      <div className="progarm-schedule">
-        <div className="program-date">
-          <span>Nov 14th to 25th</span>
-        </div>
-        <div className="program-time">
-          <span>8:00 - 9:00 PM EST</span>
-        </div>
-      </div>
-      <div className="program-register">
-        <button className="register">REGISTER</button>
-      </div> */}
     </div>
   );
 }

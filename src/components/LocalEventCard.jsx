@@ -1,9 +1,14 @@
 import React from "react";
 
-function LocalEventCard() {
+function LocalEventCard(props) {
   return (
     <div className="event-card">
-      <span className="event-album">Event: Album</span>
+      <div className="event-title">
+        <span>{props.title}</span>
+      </div>
+      <div>
+        <img className="event-image" src={props.img} alt="event img" />
+      </div>
     </div>
   );
 }

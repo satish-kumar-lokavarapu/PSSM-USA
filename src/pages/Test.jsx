@@ -28,32 +28,50 @@
 
 // export default Test;
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-const DonationComponent = () => {
-  const [showDonationInfo, setShowDonationInfo] = useState(false);
+// const DonationComponent = () => {
+//   const [showDonationInfo, setShowDonationInfo] = useState(false);
 
-  const handleDonationInfoClick = () => {
-    // Toggle the state to show/hide donation information
-    setShowDonationInfo(!showDonationInfo);
-  };
+//   const handleDonationInfoClick = () => {
+//     // Toggle the state to show/hide donation information
+//     setShowDonationInfo(!showDonationInfo);
+//   };
 
+//   return (
+//     <div>
+//       <button onClick={handleDonationInfoClick}>
+//         {showDonationInfo ? "Hide" : "Show"} Donation Information
+//       </button>
+
+//       {showDonationInfo && (
+//         <div>
+//           {/* Display your donation information here */}
+//           <p>Account Number: XXXX-XXXX-XXXX</p>
+//           <p>Bank: XYZ Bank</p>
+//           <p>...</p>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default DonationComponent;
+
+import React from "react";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faHippo } from "@fortawesome/free-solid-svg-icons";
+
+function Test() {
   return (
-    <div>
-      <button onClick={handleDonationInfoClick}>
-        {showDonationInfo ? "Hide" : "Show"} Donation Information
-      </button>
+    // <div className="test-img">
 
-      {showDonationInfo && (
-        <div>
-          {/* Display your donation information here */}
-          <p>Account Number: XXXX-XXXX-XXXX</p>
-          <p>Bank: XYZ Bank</p>
-          <p>...</p>
-        </div>
-      )}
+    // </div>
+    <div>
+      <FontAwesomeIcon icon={faHippo} />
     </div>
   );
-};
+}
 
-export default DonationComponent;
+export default Test;

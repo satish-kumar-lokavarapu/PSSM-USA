@@ -3,8 +3,15 @@ body {
   /* font-family: "Inter"; */
   color: #605b5b;
   font-size: 13px;
+  margin: 1%;
+  padding: 0%;
   text-decoration: none;
+  /* overflow-x: hidden; */
 }
+.main-container {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   color: #40a7e2;
@@ -45,7 +52,7 @@ a {
   background-color: #fff;
   display: flex;
 }
-.nav-items {
+.nav-links {
   display: inline-flex;
   align-items: flex-end;
   width: 100%;
@@ -53,17 +60,28 @@ a {
   font-size: 1rem;
 }
 
-.nav-items a {
+.nav-links a {
   color: #706666;
   text-decoration: none;
   height: 1.5rem;
   text-align: center;
 }
-.nav-items a:hover {
+.nav-links a:hover {
   color: #f77b4d;
 }
 
+.nav-toggle {
+  display: none;
+}
+
+.test-img {
+  background-image: url(images/flower.png);
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
 .quote img {
+  /* background-image: url(./images/flower.png); */
   display: block;
   width: 100%;
   height: 40%;
@@ -326,16 +344,26 @@ a {
   text-align: center;
 }
 .event-card {
-  width: 22%;
+  width: 47%;
   margin: 10px;
-  height: 200px;
+  height: 350px;
   border-radius: 5px;
   border: 1.5px solid #ffac33;
   background: #fff;
   box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+}
+.event-title {
+  font-size: medium;
+  font-weight: bold;
+  padding: 10px;
+}
+.event-image {
+  background-repeat: no-repeat;
+  width: 97%;
+  height: 300px;
 }
 hr {
   width: 97%;
@@ -635,4 +663,17 @@ li.menu-item:not(:last-child) {
 .fb-icon {
   border-radius: 50%;
   border: 1px solid #0091e9;
+}
+
+.video-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #b43e10;
+  padding: 10px;
+}
+.video-responsive {
+  width: 99%;
+  height: 500px;
+  border-radius: 5px;
+  padding: 3px;
 }

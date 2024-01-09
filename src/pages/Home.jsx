@@ -12,15 +12,17 @@ import AboutPatriji from "../components/AboutPatriji";
 import Meditation from "../components/Meditation";
 import Spiritual from "../components/spiritual";
 import SocialMedia from "../components/SocialMedia";
-import DonationComponent from "../components/DonationComponent";
-// import Inperson from "../components/Inperson";
+import Inperson from "../components/Inperson";
+import WhyMeditation from "../components/WhyMeditation";
+
 function Home() {
   return (
     <div>
-      <Quote />
+      {/* <Quote /> */}
       <div className="container">
         <div className="left-container">
           <Program />
+          <WhyMeditation />
           {/* <Inperson /> */}
           <Events />
           <Donation />

@@ -1,6 +1,12 @@
 import React from "react";
 
 import LocalEventCard from "./LocalEventCard";
+import { LocalEventDetails, USA_EventDetails } from "../EventDetails";
+// import LocalEventDetails from "../EventDetails";
+
+function createEvent(event) {
+  return <LocalEventCard title={event.title} img={event.img} />;
+}
 
 function Event() {
   return (
@@ -17,21 +23,14 @@ function Event() {
         </div>
       </div>
       <div className="local-events">
-        <LocalEventCard />
-        <LocalEventCard />
-        <LocalEventCard />
-        <LocalEventCard />
+        {LocalEventDetails.map(createEvent)}
+        {/* <LocalEventCard /> */}
       </div>
       <hr />
       <div className="event-title">
         <label>USA Events</label>
       </div>
-      <div className="local-events">
-        <LocalEventCard />
-        <LocalEventCard />
-        <LocalEventCard />
-        <LocalEventCard />
-      </div>
+      <div className="local-events">{USA_EventDetails.map(createEvent)}</div>
     </div>
   );
 }
